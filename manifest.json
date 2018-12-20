@@ -1,0 +1,42 @@
+{
+    "manifest_version": 2,
+    "name": "Getting Started Example",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "permissions": [
+        "activeTab"
+    ],
+    "page_action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://tx3.lusobrasileiro.travian.com/*"
+            ],
+            "css": [],
+            "js": [
+                "jquery-3.3.1.min.js",
+                "geral.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://tx3.lusobrasileiro.travian.com/berichte.*"
+            ],
+            "css": [],
+            "js": [
+                "report.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://tx3.lusobrasileiro.travian.com/build.php?tt=99&id=39"
+            ],
+            "css": [],
+            "js": [
+                "farm-list.js"
+            ]
+        }
+    ]
+}
