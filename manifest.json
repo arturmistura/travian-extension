@@ -37,6 +37,15 @@
             "js": [
                 "farm-list.js"
             ]
+        },
+        {
+            "matches": [
+                "https://tx3.lusobrasileiro.travian.com/statistiken.php?id=0&idSub=3"
+            ],
+            "css": [],
+            "js": [
+                "top-10.js"
+            ]
         }
     ]
 }
